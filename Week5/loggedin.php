@@ -3,9 +3,9 @@
 session_start();
 $accesslevel = $_COOKIE['access_level_cookie'];
 
-displayAccessLevelInformation($accesslevel)
+displayAccessLevelInformation($accesslevel);
 
-function displayAcessLevellInformation($accessLevel)
+function displayAccessLevelInformation($accessLevel)
 {
     if($accessLevel == "standarduser"){
         echo "<p style = \"background-colour: lightgreen\">You are currently logged in as a standard user</p>";
